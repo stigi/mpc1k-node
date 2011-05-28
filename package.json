@@ -1,0 +1,31 @@
+{
+    "name": "mpc1k-node",
+    "description": "A library to parse & generate preset files (PGM) for the AKAI MPC1000",
+    "version": "0.0.1",
+    "homepage": "http://github.com/stigi/mpc1k-node",
+    "author": "Ullrich Schäfer <ullrich@seidbereit.de> (http://seidbereit.de)",
+    "keywords": [
+        "akai",
+        "mpc",
+        "mpc1000",
+        "preset",
+        "pgm"
+    ],
+    "licenses": [
+        {
+            "type": "BSD",
+            "url": "http://www.opensource.org/licenses/BSD-3-Clause"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/stigi/mpc1k-node.git"
+    },
+    "engines": {
+        "node": "*"
+    },
+    "main": "mpc1k-node.js",
+    "directories": {
+        "lib": "lib"
+    }
+}
