@@ -12,11 +12,11 @@ var sys = require('sys'),
 exports.parser = parser;
 exports.generator = generator;
 exports.version = '0.0.1';
+exports.emptyPGM = emptyPGM;
 
-exports.test = function(){
+function emptyPGM(){
+  var emptyPGMBytes = fs.readFileSync('./data/Program01.PGM');
   var pgmParser = parser.createParser();
-  pgmParser.on('end', function(pgm){
-    console.log(pgm.pads[1]);
-  });
-  pgmParser.parseStream(fs.createReadStream('./data/E_Kit.PGM'));
-}
+  pgmParser.parseBytes(emptyPGMBytes);
+  return pgmParser.pgm;
+};
